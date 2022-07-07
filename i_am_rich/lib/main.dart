@@ -7,14 +7,13 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('I Am Rich'),
+          title: const Text('I Am Rich'),
           backgroundColor: Colors.indigo[400],
         ),
         backgroundColor: Colors.indigo[50],
         body: const Center(
           child: Image(
-            image: NetworkImage(
-                'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
+            image: AssetImage('images/diamond.png'),
           ),
         ),
       ),
