@@ -4,9 +4,19 @@ import 'package:flutter/material.dart';
 // courses taken in Java!
 void main() {
   runApp(
-    const MaterialApp(
-      home: Center(
-        child: Text("Hello, world!"),
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('I Am Rich'),
+          backgroundColor: Colors.indigo[400],
+        ),
+        backgroundColor: Colors.indigo[50],
+        body: const Center(
+          child: Image(
+            image: NetworkImage(
+                'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
+          ),
+        ),
       ),
     ),
   );
