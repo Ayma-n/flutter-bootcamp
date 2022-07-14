@@ -6,12 +6,13 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('I Like Code'),
-          backgroundColor: Colors.black38,
+          backgroundColor: const Color(0xFF2B2A2A),
         ),
         body: const Center(
           child: Image(
-            image: AssetImage('images/programming.png'),
-          ),
+              image: AssetImage('images/programming.png'),
+              width: 300,
+              height: 300),
         ),
       ),
     ),
