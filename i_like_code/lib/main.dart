@@ -5,16 +5,15 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("I Like Code"),
+          title: const Text('I Like Code'),
           backgroundColor: Colors.black38,
         ),
-          body: Center(
-            child: Image(
-              image: AssetImage(),
-            ),
-          )
+        body: const Center(
+          child: Image(
+            image: AssetImage('images/programming.png'),
+          ),
+        ),
       ),
-      ,
     ),
   );
 }
