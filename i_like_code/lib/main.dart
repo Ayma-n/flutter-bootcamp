@@ -14,6 +14,7 @@ void main() {
               width: 300,
               height: 300),
         ),
+        backgroundColor: Colors.grey[300],
       ),
     ),
   );
