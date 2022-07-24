@@ -28,12 +28,68 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'Satisfy',
                 ),
               ),
-              Text('CS STUDENT @ BROWN',
-                  style: TextStyle(
-                    color: Colors.white70,
-                    fontFamily: 'SourceSansPro',
-                    fontWeight: FontWeight.bold,
-                  ))
+              Text(
+                'CS STUDENT @ BROWN',
+                style: TextStyle(
+                  color: Colors.white70,
+                  fontFamily: 'SourceSansPro',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 30.0,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                      size: 25.0,
+                    ),
+                    SizedBox(
+                      width: 8.0,
+                    ),
+                    Text(
+                      '+1 000-000-0000',
+                      style: TextStyle(
+                        color: Colors.teal.shade800,
+                        fontFamily: 'SourceSansPro',
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(
+                  vertical: 8.0,
+                  horizontal: 30.0,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                      size: 25.0,
+                    ),
+                    SizedBox(
+                      width: 8.0,
+                    ),
+                    Text(
+                      'ayman_benjelloun_touimi@brown.edu',
+                      style: TextStyle(
+                        color: Colors.teal.shade800,
+                        fontFamily: 'SourceSansPro',
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
@@ -60,7 +116,7 @@ class LayoutChallenge extends StatelessWidget {
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
+                children: [
                   Container(color: Colors.yellow, width: 100.0, height: 100.0),
                   Container(color: Colors.green, width: 100.0, height: 100.0),
                 ],
