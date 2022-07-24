@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 22.0,
+                  fontSize: 28.0,
                   fontFamily: 'Satisfy',
                 ),
               ),
@@ -36,58 +37,60 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
+              SizedBox(
+                height: 20.0,
+                width: 120.0,
+                child: Divider(
+                  color: Colors.teal.shade50,
+                ),
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 30.0,
                 ),
-                child: Row(
-                  children: [
-                    Icon(
+                child: Padding(
+                  padding: EdgeInsets.all(2.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       color: Colors.teal,
                       size: 25.0,
                     ),
-                    SizedBox(
-                      width: 8.0,
-                    ),
-                    Text(
-                      '+1 000-000-0000',
+                    title: Text(
+                      '+1 000-000-000',
                       style: TextStyle(
                         color: Colors.teal.shade800,
                         fontFamily: 'SourceSansPro',
                       ),
                     ),
-                  ],
+                    horizontalTitleGap: 8.0,
+                  ),
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
+              Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 8.0,
                   horizontal: 30.0,
                 ),
-                child: Row(
-                  children: [
-                    Icon(
+                child: Padding(
+                  padding: EdgeInsets.all(2.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       color: Colors.teal,
                       size: 25.0,
                     ),
-                    SizedBox(
-                      width: 8.0,
-                    ),
-                    Text(
+                    title: Text(
                       'ayman_benjelloun_touimi@brown.edu',
                       style: TextStyle(
                         color: Colors.teal.shade800,
                         fontFamily: 'SourceSansPro',
+                        fontSize: 13.5,
                       ),
                     ),
-                  ],
+                    horizontalTitleGap: 8.0,
+                  ),
                 ),
               ),
             ],
