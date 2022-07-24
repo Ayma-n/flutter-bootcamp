@@ -19,7 +19,21 @@ class MyApp extends StatelessWidget {
                 radius: 50.0,
                 backgroundImage: AssetImage('images/ayman.jpg'),
               ),
-              Text('Ayman Benjelloun Touimi'),
+              Text(
+                'Ayman Benjelloun Touimi',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22.0,
+                  fontFamily: 'Satisfy',
+                ),
+              ),
+              Text('CS STUDENT @ BROWN',
+                  style: TextStyle(
+                    color: Colors.white70,
+                    fontFamily: 'SourceSansPro',
+                    fontWeight: FontWeight.bold,
+                  ))
             ],
           ),
         ),
