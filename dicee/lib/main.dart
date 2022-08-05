@@ -24,13 +24,30 @@ class DicePage extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Image.asset('images/dice1.png'),
+              child: TextButton(
+                // https://stackoverflow.com/questions/66291836/flutter-textbutton-remove-padding-and-inner-padding
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                ),
+                onPressed: () {
+                  print('Left button got pressed');
+                },
+                child: Image.asset('images/dice1.png'),
+              ),
             ),
           ),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Image.asset('images/dice2.png'),
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                ),
+                onPressed: () {
+                  print('Right button got pressed');
+                },
+                child: Image.asset('images/dice2.png'),
+              ),
             ),
           ),
         ],
