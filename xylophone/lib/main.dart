@@ -1,6 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 void main() => runApp(XylophoneApp());
 
@@ -15,7 +14,7 @@ class XylophoneApp extends StatelessWidget {
               child: Text("Click Me!"),
               onPressed: () {
                 final player = AudioPlayer();
-                player.play(AssetSource('assets/note1.wav'));
+                player.play(AssetSource('note1.wav'));
               },
             ),
           ),
