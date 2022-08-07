@@ -16,74 +16,95 @@ class XylophoneApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              TextButton(
-                onPressed: () {
-                  playNote(1);
-                },
-                child: Container(
-                  width: 300,
-                  height: 50,
-                  color: Colors.red,
+              Expanded(
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
+                  onPressed: () {
+                    playNote(1);
+                  },
+                  child: Container(
+                    color: Colors.red,
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playNote(2);
-                },
-                child: Container(
-                  width: 300,
-                  height: 50,
-                  color: Colors.orange,
+              Expanded(
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
+                  onPressed: () {
+                    playNote(2);
+                  },
+                  child: Container(
+                    color: Colors.orange,
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playNote(3);
-                },
-                child: Container(
-                  width: 300,
-                  height: 50,
-                  color: Colors.yellow,
+              Expanded(
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
+                  onPressed: () {
+                    playNote(3);
+                  },
+                  child: Container(
+                    color: Colors.yellow,
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playNote(4);
-                },
-                child: Container(
-                  width: 300,
-                  height: 50,
-                  color: Colors.green,
+              Expanded(
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
+                  onPressed: () {
+                    playNote(4);
+                  },
+                  child: Container(
+                    color: Colors.green,
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playNote(5);
-                },
-                child: Container(
-                  width: 300,
-                  height: 50,
-                  color: Colors.teal,
+              Expanded(
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
+                  onPressed: () {
+                    playNote(5);
+                  },
+                  child: Container(
+                    color: Colors.teal,
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playNote(6);
-                },
-                child: Container(
-                  width: 300,
-                  height: 50,
-                  color: Colors.blue,
+              Expanded(
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
+                  onPressed: () {
+                    playNote(6);
+                  },
+                  child: Container(
+                    color: Colors.blue,
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playNote(7);
-                },
-                child: Container(
-                  width: 300,
-                  height: 50,
-                  color: Colors.purple,
+              Expanded(
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
+                  onPressed: () {
+                    playNote(7);
+                  },
+                  child: Container(
+                    color: Colors.purple,
+                  ),
                 ),
               ),
             ],
